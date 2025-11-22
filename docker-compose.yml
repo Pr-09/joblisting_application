@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  joblisting-app:
+    image: joblisting_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: joblisting-app-container
+    ports:
+      - "9090:9090"
+    environment:
+      SERVER_PORT: 9090
+      MONGODB_URI: "mongodb+srv://root:root@cluster0.m8lvfaz.mongodb.net/JobSeaker?retryWrites=true&w=majority&appName=Cluster0"
+      MONGODB_DATABASE: "JobSeaker"
+    restart: always
