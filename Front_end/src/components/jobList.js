@@ -4,7 +4,7 @@ function JobList() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9090/job_listing")
+    fetch("https://job-listing-application-zslr.onrender.com/job_listing")
       .then((res) => res.json())
       .then((data) => setJobs(data))
       .catch((err) => console.error("Error:", err));
