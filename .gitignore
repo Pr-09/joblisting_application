@@ -1,0 +1,7 @@
+# Ignore build folders
+target/
+node_modules/
+.idea/
+
+# Ignore docker compose
+docker-compose.yml
