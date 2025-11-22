@@ -11,6 +11,6 @@ services:
       - "9090:9090"
     environment:
       SERVER_PORT: 9090
-      MONGODB_URI: "mongodb+srv://root:root@cluster0.m8lvfaz.mongodb.net/JobSeaker?retryWrites=true&w=majority&appName=Cluster0"
+      MONGODB_URI: "DB url"
       MONGODB_DATABASE: "JobSeaker"
     restart: always
