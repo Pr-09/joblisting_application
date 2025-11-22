@@ -21,7 +21,7 @@ function AddJob() {
       techs: formData.techs.split(",").map((t) => t.trim()),
     };
 
-    fetch("http://localhost:9090/job_listing", {
+    fetch("https://job-listing-application-zslr.onrender.com/job_listing", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(jobData),
